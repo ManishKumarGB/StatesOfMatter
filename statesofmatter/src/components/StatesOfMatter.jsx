@@ -36,6 +36,7 @@ const StatesOfMatter = () => {
    return (
     <>
     <div className='container'>
+    <div className='background'>
     <div>Temperature:{temperature}</div>
      <img src={state.image} alt={state.state} height={100} width={100}/>
      <button onClick={DecrementTemp} >cool</button>
@@ -43,6 +44,7 @@ const StatesOfMatter = () => {
     <button onClick={ResetTemp}>Reset</button> 
    
     <div>state:{state.state}</div>
+    </div>
     </div>
     </>
   )
